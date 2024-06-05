@@ -84,7 +84,7 @@ def send_product_data_to_telegram(product_name, product_status, image_url, produ
 
     message_text = f"Product Name: {product_name}\nProduct Status: {product_status}"
     reply_markup = {
-         [{"text": "عرض المنتج", "url": product_url}],
+         [{"text": "عرض المنتج", "url": product_link}],
                                 [{"text": "عرض السلة", "url": "https://www.dzrt.com/ar/checkout/cart"}],
                                 [{"text": "تسجيل الدخول", "url": "https://www.dzrt.com/ar/customer/account/login/"}],
                                 [{"text": "الانتقال إلى رابط الدفع النهائي", "url":"https://www.dzrt.com/ar/onestepcheckout.html" }]
